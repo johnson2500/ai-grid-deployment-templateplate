@@ -47,7 +47,7 @@ spec:
                         apps.open-cluster-management.io/acm-cluster: "true"
                         name: '{{ .clusterName }}'
           - git:
-              repoURL: https://github.com/ai-grid-cloud/ai-grid-lab-catalog.git
+              repoURL: https://github.com/johnson2500/ai-grid-catalog-scratch.git
               revision: main
               directories:
                 - path: 'catalog/clusters/{{.name}}'
@@ -58,7 +58,7 @@ spec:
     spec:
       project: acm-models-catalog-models
       source:
-        repoURL: https://github.com/ai-grid-cloud/ai-grid-lab-catalog.git
+        repoURL: https://github.com/johnson2500/ai-grid-catalog-scratch.git
         targetRevision: main
         path: '{{.path.path}}'
         kustomize: {}
@@ -120,7 +120,7 @@ spec:
                         apps.open-cluster-management.io/acm-cluster: "true"
                         name: '{{ .clusterName }}'
           - git:
-              repoURL: https://github.com/ai-grid-cloud/ai-grid-lab-catalog.git
+              repoURL: https://github.com/johnson2500/ai-grid-catalog-scratch.git
               revision: main
               directories:
                 - path: 'catalog/ingress'
@@ -135,7 +135,7 @@ spec:
     spec:
       project: acm-models-catalog-maas
       source:
-        repoURL: https://github.com/ai-grid-cloud/ai-grid-lab-catalog.git
+        repoURL: https://github.com/johnson2500/ai-grid-catalog-scratch.git
         targetRevision: main
         path: '{{.path.path}}'
         kustomize: {}
@@ -196,7 +196,7 @@ spec:
                         apps.open-cluster-management.io/acm-cluster: "true"
                         name: '{{ .clusterName }}'
           - git:
-              repoURL: https://github.com/ai-grid-cloud/ai-grid-lab-catalog.git
+              repoURL: https://github.com/johnson2500/ai-grid-catalog-scratch.git
               revision: main
               directories:
                 - path: 'catalog/subscriptions'
@@ -211,7 +211,7 @@ spec:
     spec:
       project: acm-models-catalog-maas
       source:
-        repoURL: https://github.com/ai-grid-cloud/ai-grid-lab-catalog.git
+        repoURL: https://github.com/johnson2500/ai-grid-catalog-scratch.git
         targetRevision: main
         path: '{{.path.path}}'
         directory:
